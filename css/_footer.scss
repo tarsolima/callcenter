@@ -1,0 +1,78 @@
+footer {
+    padding: 100px 0;
+    background: #222;
+}
+
+.container-footer{
+    display: flex;
+    justify-content: center;
+
+    h2 {
+        color: #fff;
+        margin-bottom: 20px;
+    }
+
+    .footer-box {
+        padding: 0 20px;
+        margin: 10px;
+    }
+
+    .about {
+        width: 18.4375em;
+    }
+
+    .contact {
+        width: 24.375em;
+
+        p:first-of-type {
+            margin-bottom: 16px;
+        }
+
+        .number {
+            color: #8490ff;
+            font-size: 1.5em;
+            font-weight: 600;
+            line-height: 30px;
+        }
+    }
+
+    .newsletter {
+        p {
+            margin-bottom: 15px;
+        }
+
+        .form-footer {
+            position: relative;
+
+            input {
+                width: 100%;
+                padding: 10px;
+                border-radius: 20px;
+                border: 1px solid #fff;
+                color: #222;
+            }
+
+            button {
+                background: #8490ff;
+                border: none;
+                height: 38px;
+                border-radius: 57px;
+                padding: 0 30px;
+                color: #fff;
+                font-size: 1.125em;
+                font-weight :500;
+                cursor: pointer;
+                position: absolute;
+                right: 0px;
+                bottom: 0px;
+            }
+        }
+    }
+}
+
+.end-project {
+    background: #222;
+    text-align: center;
+    padding: 5px;
+    font-size: .75em;
+}

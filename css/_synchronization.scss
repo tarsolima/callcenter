@@ -77,3 +77,33 @@
         }
     }
 }
+
+.project {
+    padding: 30px 0 120px 0;
+    background: #FBFBFF;
+}
+
+.project-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    .project-box1 {
+        width: 200px;
+        margin: 10px 10px;
+
+        h1 {
+            font-weight: 700;
+            font-size: 3em;
+            display: inline-block;
+            background: -webkit-linear-gradient(0deg,#62bdfc 0%, #8490ff 100%);
+            background-clip: text;
+            color: transparent;
+            -webkit-background-clip: text;
+        }
+
+        p {
+            color: #222;
+        }
+    }
+}

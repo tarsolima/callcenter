@@ -80,8 +80,7 @@ header li a:hover {
   font-weight: 300;
 }
 .home-container .text-home a {
-  padding: 10px 30px;
-  border: 1px solid transparent;
+  padding: 15px 30px;
   background-image: -webkit-linear-gradient(0deg, #62bdfc 0%, #8490ff 100%);
   border-radius: 25px;
   color: #fff;
@@ -91,7 +90,7 @@ header li a:hover {
   transition: 0.3s;
 }
 .home-container .text-home a:hover {
-  border-color: #000;
+  border: 1px solid #000;
   background: #fff;
   color: #000;
 }
@@ -227,9 +226,8 @@ header li a:hover {
   margin-bottom: 30px;
 }
 .box-content .content-text a {
-  padding: 10px 30px;
+  padding: 15px 30px;
   margin-bottom: 20px;
-  border: 1px solid transparent;
   background-image: -webkit-linear-gradient(0deg, #62bdfc 0%, #8490ff 100%);
   border-radius: 25px;
   color: #fff;
@@ -239,7 +237,7 @@ header li a:hover {
   transition: 0.3s;
 }
 .box-content .content-text a:hover {
-  border-color: #000;
+  border: 1px solid #000;
   background: #fff;
   color: #000;
 }
@@ -303,6 +301,8 @@ header li a:hover {
 }
 
 .system-container {
+  max-width: 1200px;
+  margin: 0 auto;
   display: flex;
   justify-content: center;
   align-content: center;
@@ -352,10 +352,10 @@ header li a:hover {
   margin-bottom: 20px;
 }
 .box-responsible-1 .text-responsible a, .box-responsible-1 .text-responsible-2 a, .box-responsible-2 .text-responsible a, .box-responsible-2 .text-responsible-2 a {
-  padding: 10px 35px;
+  padding: 15px 30px;
   border: 1px solid transparent;
   background-image: -webkit-linear-gradient(0deg, #62bdfc 0%, #8490ff 100%);
-  border-radius: 25px;
+  border-radius: 30px;
   color: #fff;
   line-height: 42px;
   font-weight: 500;
@@ -393,7 +393,6 @@ header li a:hover {
 .patners-box .img-patners {
   margin: 10px 20px;
   filter: grayscale(100%);
-  cursor: pointer;
   transition: 0.3s;
 }
 .patners-box .img-patners:hover {
@@ -467,10 +466,10 @@ header li a:hover {
 .form-box button {
   display: block;
   margin-left: 20px;
-  padding: 0px 35px 0 30px;
+  padding: 10px 30px;
   border: none;
   background-image: -webkit-linear-gradient(0deg, #62bdfc 0%, #8490ff 100%);
-  border-radius: 25px;
+  border-radius: 30px;
   color: #fff;
   font-size: 0.875em;
   line-height: 42px;

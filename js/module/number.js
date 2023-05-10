@@ -1,19 +1,19 @@
 export default function number() {
-    const numeros = document.querySelectorAll('[data-number]');
-    function addNumeros() {
-        numeros.forEach(numero => {
-            const total = +numero.innerText;
-            const incremento = Math.floor(total / 100);
-            let start = 0;
-            const timer = setInterval(() => {
-                start += incremento;
-                numero.innerText = start;
-                if(start > total) {
-                    numero.innerText = total;
-                    clearInterval(timer);
-                }
-            }, 25 * Math.random());
-        });
-    }
-    addNumeros();
+  const numero = document.querySelectorAll('[data-number]');
+  function initNumber() {
+    numero.forEach((numeros) => {
+      const valor = +numeros.innerText;
+      const incremento = Math.floor(valor / 100);
+      let start = 0;
+      const timer = setInterval(() => {
+        start += incremento;
+        numeros.innerText = start;
+        if (start > valor) {
+          numeros.innerText = valor;
+          clearInterval(timer);
+        }
+      }, 25 * Math.random());
+    });
+  }
+  initNumber();
 }

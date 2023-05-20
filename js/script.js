@@ -1,7 +1,9 @@
 import number from './module/number.js';
 import accordion from './module/accordion.js';
-import menuSuave from './module/menu-suave.js';
+import animaScroll from './module/anima-scroll.js';
+import scrollSuave from './module/scroll-suave.js';
 
 number();
 accordion();
-menuSuave();
+animaScroll();
+scrollSuave();

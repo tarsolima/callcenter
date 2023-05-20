@@ -1,4 +1,4 @@
-export default function menuSuave() {
+export default function scrollSuave() {
   const scroll = document.querySelectorAll('[data-scroll]');
   const windowMetade = window.innerHeight * 0.8;
 

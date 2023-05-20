@@ -1,0 +1,20 @@
+[data-scroll] {
+  opacity: 0
+}
+
+[data-scroll].active {
+  opacity: 1;
+  animation: scrollSuave .5s ease-in-out;
+}
+
+@keyframes scrollSuave {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -15px, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0px, 0);
+  }
+}

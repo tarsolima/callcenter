@@ -124,6 +124,7 @@ header li a:hover {
 .choose {
   background: url("/img/background-choose.webp") no-repeat center center;
   background-size: cover;
+  background-attachment: fixed;
   padding: 120px 0;
   position: relative;
 }
@@ -163,6 +164,7 @@ header li a:hover {
   margin: 15px;
   padding: 30px 20px 30px 20px;
   background: #fff;
+  border-radius: 5px;
 }
 .choose .choose-container .choose-box h3 {
   margin: 15px 0 5px 0;
@@ -177,6 +179,11 @@ header li a:hover {
 .content-synchronization {
   padding: 120px 0 80px 0;
   background: #FBFBFF;
+}
+.content-synchronization .subtitle-synchronization {
+  text-align: center;
+  margin-bottom: 60px;
+  font-size: 2.25em;
 }
 
 .box-content {
@@ -576,6 +583,25 @@ footer {
   border-color: #6A9DDC !important;
 }
 
+[data-scroll] {
+  opacity: 0;
+}
+
+[data-scroll].active {
+  opacity: 1;
+  animation: scrollSuave 0.5s ease-in-out;
+}
+
+@keyframes scrollSuave {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -15px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0px, 0);
+  }
+}
 @media (max-width: 1151px) {
   /* Home */
   .text-home h1 {

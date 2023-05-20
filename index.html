@@ -13,19 +13,19 @@
     </head>
 <body>
     <header>
-            <a href="#"><img src="img/logo-header.webp" alt="Call Center"></a>
+            <a href="#home"><img src="img/logo-header.webp" alt="Call Center"></a>
         <nav>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Feature</a></li>
-                <li><a href="#">We Offer</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#feature">Feature</a></li>
+                <li><a href="#offer">We Offer</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <div class="home-container">
+        <div class="home-container" id='home' data-scroll>
                 <img src="img/equipe-de-atendimento.webp" alt="Equipe de atendimento">
             <div class="text-home">
                <h3>INNOVATE YOUR WORKSPACE</h3>
@@ -35,7 +35,7 @@
             </div>
         </div>
 
-        <div class="box-container">
+        <div class="box-container" id="feature" data-scroll>
             <div class="box-inf">
                 <img src="img/inf01.webp" alt="Support">
                 <h3>Online Support</h3>
@@ -55,7 +55,7 @@
             </div>
         </div>
 
-        <section class="choose">
+        <section class="choose" data-scroll>
             <div class="overlay"></div>
             <div class="choose-text">
                 <h1>Why Choose Us Your telemarketing Builder</h1>
@@ -82,7 +82,8 @@
             </div>
         </section>
 
-        <section class="content-synchronization">
+        <section class="content-synchronization" id="offer" data-scroll>
+            <h2 class="subtitle-synchronization">choose an image below</h2>
             <div class="box-content">
                 <div class="box-content-icons">
                     <div class="box1"><a href="#" class="rec-1" data-list><img src="img/content1.webp" alt="maintence"></a></div>
@@ -136,7 +137,7 @@
                 </div>
             </div>
         </section>
-        <section class="project">
+        <section class="project" data-scroll>
             <div class="project-container">
                 <div class="project-box1">
                     <h1 data-number>2536</h1>
@@ -165,7 +166,7 @@
             </div>
         </section>
 
-        <section class="system">
+        <section class="system" data-scroll>
             <div class="overlay"></div>
             <div class="system-text">
                 <h2>Unleash Telemarketing Excellence</h2>
@@ -204,7 +205,7 @@
             </div>
         </section>
 
-        <section class="responsible">
+        <section class="responsible" id="about" data-scroll>
             <div class="box-responsible-1">
                 <div class="img-responsible"><img src="img/responsible.webp" alt="telemarkting01"></div>
                 <div class="text-responsible">
@@ -227,7 +228,7 @@
 
         </section>
 
-        <section class="patners">
+        <section class="patners" data-scroll>
             <div class="patners-box">
                 <div class="img-patners"><img src="img/patners1.webp" alt="sponsor-creative"></div>
                 <div class="img-patners"><img src="img/patners2.webp" alt="sponsor-premium"></div>
@@ -237,13 +238,13 @@
             </div>
         </section>
 
-        <div class="form-container">
+        <div class="form-container" data-scroll>
             <div class="form-text">
                 <h2>If you need it, just send us a message.</h2>
                 <p>Get in touch with our team of temelarketing enthusiasts.</p>
             </div>
 
-            <form action="index.php" method="POST">
+            <form action="index.php" id="contact" method="POST">
                 <div class="form-box">
                     <div class="preench">
                         <input name="name" placeholder="Enter your name"></type>

@@ -6,16 +6,29 @@
     img {
         width: 500px;
         display: block;
+
+        @media (max-width: 598px) {
+            width: 100%;
+        }
     }
 
     .text-responsible, .text-responsible-2 {
         max-width: 46.5625em;
         padding: 0 10px 0 15px;
 
+        @media (max-width: 841px) {
+            max-width: 46.5625em;
+            margin: 20px auto;
+        }
+
         h2 {
             color: #222;
             margin-bottom: 25px;
             font-size: 2.25em;
+
+            @media (max-width: 392px) {
+                font-size: 2em;
+            }
         }
 
         p {
@@ -46,8 +59,20 @@
     }
 }
 
+.box-responsible-1 {
+    @media (max-width: 841px) {
+        flex-wrap: wrap-reverse;
+    }
+}
+
 .box-responsible-2 {
     justify-content:flex-end;
+
+    @media (max-width: 841px) {
+        margin-top: 40px;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+    }
 }
 
 .text-responsible-2 {

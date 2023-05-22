@@ -1,10 +1,10 @@
 .content-synchronization {
-    padding: 120px 0 80px 0;
+    padding: 120px 0 50px 0;
     background: #FBFBFF;
 
     .subtitle-synchronization {
         text-align: center;
-        margin-bottom: 60px;
+        margin-bottom: 40px;
         font-size: 2.25em;
     }
 }
@@ -14,12 +14,17 @@
     justify-content:center;
     align-items: center;
 
+    @media (max-width: 841px) {
+        flex-wrap: wrap;
+    }
+
     .box-content-icons {
+        max-width: 37.5em;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
-        max-width: 37.5em;
+        margin-bottom: 10px;
 
         .box1 {
             margin: 10px;
@@ -52,6 +57,14 @@
         max-width: 25.625em;
         padding: 0 10px;
         margin-left: 40px;
+
+        @media (max-width: 941px) {
+            margin-left: 0px;
+        }
+
+        @media (max-width: 841px) {
+            max-width: 33.625em;
+        }
 
         h3 {
             font-size: 1.125em;
@@ -86,16 +99,38 @@
 .project {
     padding: 30px 0 120px 0;
     background: #FBFBFF;
+
+    @media (max-width: 841px) {
+        padding-top: 0px;
+    }
 }
 
 .project-container {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @media (max-width: 841px) {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
     
     .project-box1 {
-        width: 200px;
+        width: clamp(150px, 200px, 200px);
         margin: 10px 10px;
+
+        @media (max-width: 841px) {
+            margin: 10px 10px;
+
+            &:not(:last-child)::after {
+                content: '';
+                display: block;
+                height: 1px;
+                width: 100%;
+                margin-top: 20px;
+                background-color: rgb(116 106 106 / 7%);
+            }
+        }
 
         h1 {
             font-weight: 700;

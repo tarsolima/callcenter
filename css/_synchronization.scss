@@ -1,5 +1,5 @@
 .content-synchronization {
-    padding: 120px 0 50px 0;
+    padding: 60px 0;
     background: #FBFBFF;
 
     .subtitle-synchronization {
@@ -73,16 +73,16 @@
         }
 
         p {
-            margin-bottom: 30px;
+            margin-bottom: 15px;
         }
 
         a {
-            padding: 15px 30px;
-            margin-bottom: 20px;
+            display: inline-block;
+            padding: 12px 24px;
             background-image: -webkit-linear-gradient(0deg,#62bdfc 0%,#8490ff 100%);
             border-radius: 25px;
+            border: 1px solid #fff;
             color: #fff;
-            line-height: 42px;
             font-weight: 500;
             text-transform: uppercase;
             transition: 0.3s;
@@ -97,7 +97,7 @@
 }
 
 .project {
-    padding: 30px 0 120px 0;
+    padding: 30px 0 60px 0;
     background: #FBFBFF;
 
     @media (max-width: 841px) {

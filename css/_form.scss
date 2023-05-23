@@ -1,5 +1,5 @@
 .form-container {
-    padding: 120px 0;
+    padding: 60px 0;
 }
 
 .form-text {
@@ -10,14 +10,10 @@
     h2 {
         margin-bottom: 10px;
         font-size: 2.25em;
-        
-        @media (max-width: 598px) {
-            font-size: 2em;
-        }
     }
 
     p {
-        margin-bottom: 16px;
+        margin-bottom: 15px;
     }
 }
 
@@ -86,13 +82,12 @@
     button {
         display: block;
         margin-left: 20px;
-        padding: 10px 30px;
+        padding: 18px 36px;
         border: none;
         background-image: -webkit-linear-gradient(0deg,#62bdfc 0%,#8490ff 100%);
         border-radius: 30px;
         color: #fff;
         font-size: .875em;
-        line-height: 42px;
         font-weight: bold;
         text-transform: uppercase;
         cursor: pointer;

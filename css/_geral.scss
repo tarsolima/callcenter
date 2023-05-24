@@ -10,16 +10,26 @@
 body {
     font-family: 'Poppins', sans-serif;
     background-color: #fff;
-    color: #777;
-    font-size: .875em;
-    font-weight: 300;
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: "Poppins",sans-serif;
-    color: #222;
+    color: #1d1b1b;
     line-height: 1.2;
     font-weight: 600;
 }
 
-//  #1d1b1b <- para usar no P
+$main-title: #1d1b1b;
+$p-color-black: #1d1b1b;
+$p-color-white: #fff;
+$p-color-footer: #f9f9ff;
+$h2-color-black: #1d1b1b;
+$h2-color-black: #fff;
+
+@mixin paragraph($color: $p-color-black, $font: .875rem, $line: 21px) {
+    font-family: "Poppins",sans-serif;
+    color: $color;
+    font-size: $font;
+    line-height: $line;
+    font-weight: 300;
+}

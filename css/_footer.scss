@@ -31,12 +31,17 @@ footer {
         @media (max-width: 741px) {
             width: 24.375em;
         }
+
+        p {
+            @include paragraph($p-color-footer);
+        }
     }
 
     .contact {
         width: 24.375em;
 
         p:first-of-type {
+            @include paragraph($p-color-footer);
             margin-bottom: 16px;
         }
 
@@ -54,6 +59,7 @@ footer {
 
     .newsletter {
         p {
+            @include paragraph($p-color-footer);
             margin-bottom: 15px;
         }
 
@@ -90,5 +96,7 @@ footer {
     background: #222;
     text-align: center;
     padding: 5px;
+    @include paragraph($p-color-footer, .75rem, 18px);
     font-size: .75em;
+    
 }

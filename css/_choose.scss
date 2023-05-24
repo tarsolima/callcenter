@@ -18,19 +18,19 @@
     .choose-text {
         max-width: 43.75em;
         margin: 0 auto;
-        text-align: center;
         padding: 0 10px;
-        color: #fff;
         position: relative;
 
         h1 {
             margin-bottom: 10px;
-            font-size: 2.25em;
+            font-size: 1.9rem;
+            text-align: center;
             color: #fff;
+        }
 
-            @media (max-width: 392px) {
-                font-size: 2em;
-            }
+        p {
+            @include paragraph($p-color-white, 1rem, 24px);
+            text-align: center;
         }
     }
 
@@ -69,6 +69,12 @@
                 @media (max-width: 350px) {
                     display: none;
                 }
+            }
+        }
+
+        .content-choose {
+            p {
+                @include paragraph;
             }
         }
     }

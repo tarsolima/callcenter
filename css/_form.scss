@@ -13,6 +13,7 @@
     }
 
     p {
+        @include paragraph($p-color-black, 1rem, 24px);
         margin-bottom: 15px;
     }
 }

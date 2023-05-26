@@ -19,17 +19,46 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 600;
 }
 
+
+$family: "Poppins",sans-serif;
+
 $main-title: #1d1b1b;
+
 $p-color-black: #1d1b1b;
 $p-color-white: #fff;
 $p-color-footer: #f9f9ff;
-$h2-color-black: #1d1b1b;
-$h2-color-black: #fff;
 
-@mixin paragraph($color: $p-color-black, $font: .875rem, $line: 21px) {
-    font-family: "Poppins",sans-serif;
+$h2-color-black: #1d1b1b;
+$h2-color-white: #fff;
+$h2-footer-color-white: #fff;
+
+$color-button: #fff;
+$background-button: linear-gradient(0deg, #62bdfc 0%, #8490ff 100%);
+
+@mixin paragraph($color: $h2-color-black, $font: .875rem, $line: 21px) {
     color: $color;
     font-size: $font;
     line-height: $line;
+    font-family: $family;
     font-weight: 300;
+}
+
+@mixin heading-2($color: $h2-color-black, $font: 2.25rem, $line: 2.6875rem) {
+    color: $color;
+    font-size: $font;
+    line-height: 43px;
+    font-family: $family;
+    $font-weight: 600;
+    text-align: center;
+}
+
+@mixin button($color: $color-button, $background-button: $background-button) {
+    display: inline-block;
+    padding: 12px 24px;
+    background-image: -webkit-linear-gradient(0deg, #62bdfc 0%, #8490ff 100%);
+    border-radius: 25px;
+    color: #fff;
+    font-weight: 500;
+    text-transform: uppercase;
+    cursor: pointer;
 }

@@ -15,5 +15,16 @@ export default function number() {
       }, 25 * Math.random());
     });
   }
-  initNumber();
+
+  let observer;
+  function handleMutation(mutation) {
+    if (mutation[0].target.classList.contains('active')) {
+      observer.disconnect();
+      initNumber();
+    }
+  }
+
+  const observerTarget = document.querySelector('.project');
+  observer = new MutationObserver(handleMutation);
+  observer.observe(observerTarget, { attributes: true });
 }

@@ -12,21 +12,9 @@ header {
     }
 
     ul {
-        @media (max-width: 406px) {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-
         li{
             display: inline-block;
             margin-bottom: 10px;
-
-            @media (max-width: 390px) {
-                &:last-child {
-                    margin-right: 190px;
-                }
-            }
     
             a {
                 color: #222;

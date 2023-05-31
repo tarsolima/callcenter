@@ -1,0 +1,72 @@
+.menu {
+  display: none;
+
+  @media (max-width: 768px) {
+    display: block;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 5px;
+    color: #fff;
+    background-image: -webkit-linear-gradient(0deg, #62bdfc 0%, #8490ff 100%);
+    position: relative;
+    bottom: 8px;
+    cursor: pointer;
+    z-index: 2;
+  }
+
+  &.active::before {
+    rotate: calc(90deg);
+  }
+
+  &::before {
+    content: '';
+    content: '';
+    display: inline-block;
+    height: 2px;
+    width: 12px;
+    color: #fff;
+    background: #fff;
+    margin-right: 4px;
+    margin-bottom: 4px;
+    box-shadow: 0 4px #fff, 0 -4px #fff;
+    transition: all 0.3s;
+  }
+}
+
+header {
+  @media (max-width: 768px) {
+    justify-content: space-between;
+    padding: 20px 10px;
+    .menu-list {
+      display: none;
+      flex-direction: column;
+      margin-right: 5px;
+      padding: 60px 7px 20px 6px;
+      border-radius: 5px;
+      background-color: #fff;
+      position: absolute;
+      top: 16px;
+
+      &.active {
+        display: flex;
+        animation: menu .3s;
+
+        @keyframes menu {
+          from  {
+            opacity: 0;
+            transform: translate3d(0, -30px, 0);
+          }
+  
+          to {
+            opacity: 1;
+            transform: translate3d(0, 0px, 0);
+          }
+        }
+      }
+
+      a {
+        padding: 5px 8px;
+      }
+    }
+  } 
+}

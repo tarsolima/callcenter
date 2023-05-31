@@ -12,7 +12,8 @@ footer {
     }
 
     h2 {
-        color: #fff;
+        @include heading-2($h2-footer-color-white, 1.5rem);
+        text-align: left;
         margin-bottom: 20px;
     }
 

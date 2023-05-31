@@ -1,18 +1,27 @@
-export default function scrollInterno() {
-  const linkInterno = document.querySelectorAll('[data-link] a[href^="#"]');
+export default class ScrollInterno {
+  constructor(link, option) {
+    this.linkInterno = document.querySelectorAll(link);
 
-  function scrollToSection(event) {
+    this.behavior = option || {behavior: 'smooth', block: 'start'}
+    this.scrollToSection = this.scrollToSection.bind(this);
+  }
+
+  scrollToSection(event) {
     event.preventDefault();
     const href = event.currentTarget.getAttribute('href');
     const section = document.querySelector(href);
 
-    section.scrollIntoView({
-      behavior: 'smooth',
-      block: 'start',
-    });
+    section.scrollIntoView(this.behavior);
   }
 
-  linkInterno.forEach((event) => {
-    event.addEventListener('click', scrollToSection);
-  });
+  addEvent() {
+    this.linkInterno.forEach((event) => event.addEventListener('click', this.scrollToSection));
+  }
+
+  init() {
+    if (this.linkInterno.length) {
+      this.addEvent();
+    }
+    return this;
+  }
 }

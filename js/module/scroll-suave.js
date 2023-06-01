@@ -1,8 +1,8 @@
-export default class ScrollInterno {
+export default class ScrollANima {
   constructor(link, option) {
     this.linkInterno = document.querySelectorAll(link);
 
-    this.behavior = option || {behavior: 'smooth', block: 'start'}
+    this.behavior = option || { behavior: 'smooth', block: 'start' };
     this.scrollToSection = this.scrollToSection.bind(this);
   }
 
